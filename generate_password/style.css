@@ -1,0 +1,138 @@
+body{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-family: "Nunito Sans", sans-serif;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.title{
+    width: 10;
+    flex: 1 1 100%;
+}
+.pictures{
+    flex: 1 1 100%;
+
+}
+.calc{
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 15px
+}
+.value_number{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.left_value, .right_value{
+    flex: 1 1 33%;
+}
+.value_show{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 33%;
+    min-height: 40px;
+    border-radius: 20px;
+    border: 1px solid #808080;
+    -webkit-box-shadow: inset 0px 0px 5px -1px rgba(128, 128, 128, 1);
+    -moz-box-shadow: inset 0px 0px 5px -1px rgba(128, 128, 128, 1);
+    box-shadow: inset 0px 0px 5px -1px rgba(128, 128, 128, 1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    padding-left:7px;
+}
+.right_value{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.load_left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    padding-left: 10px;
+}
+.copy{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.copy_left, .copy_right{
+    flex: 1 1 46%;
+}
+.copy_center{
+    flex: 1 1 8%;
+    background-color: rgb(40, 114, 250);
+    border-radius: 20px;
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 13px;
+    user-select: none; 
+}
+.copy_center:hover{
+    transform: scale(1.1);
+    transition: transform 0.4s ease;
+}
+
+.range{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 47px;
+}
+.range_left, .range_right{
+    flex: 1 1 30%;
+}
+.minus{
+    flex: 1 1 1%;
+    border-radius: 50px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.slider{
+    flex: 1 1 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plus{
+    flex: 1 1 1%;
+    border-radius: 50px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.plus:hover, .minus:hover{
+    transform: scale(1.1);
+    transition: transform 0.4s ease;
+    background-color: black ;
+    color: #ffffff;
+    user-select: none; 
+}
+.use_characters{
+    flex: 1 1 100%;
+    margin-top: 20px;
+}
+.characters{
+    font-weight: bold;
+}

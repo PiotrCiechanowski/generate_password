@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <a style="font-size: 40px;"><b>Generator haseł losowych</b></a> <br>
+            <a style="font-size: 15px;">Twórz silne i niezawodne hasła, aby chronić swoje konta w Internecie.</a>
+        </div>
+        <div class="pictures" id="pictures"> <img src="pictures/house.png" alt="house" width="350px"></div>
+        <div class="calc">
+            <div class="value_number">
+                <div class="left_value"></div>
+                <div class="value_show" id="value_show"></div>
+                <div class="right_value">
+                    <div class="load_left" id="load"><img src="pictures/loading.png" alt="load" height="30px"></div>
+                    <div class="load_right"></div>
+                </div>
+            </div>
+            <div class="copy">
+                <div class="copy_left"></div>
+                <div class="copy_center" id="copy"><b>Kopiuj</b></div>
+                <div class="copy_right"></div>
+            </div>
+            <div class="password" style="margin-top: 30px;">Długość hasła: <b><a id="value">15</a></b></div>
+            <div class="range">
+                <div class="range_left"></div>
+                <div class="minus" id="minus"><b>-</b></div>
+                <div class="slider">
+                    <input type="range" class="slider1" id="range" min="1" max="29" value="15"/>
+                </div>
+                <div class="plus" id="plus"><b>+</b></div>
+                <div class="range_right"></div>
+            </div>
+            <div class="use_characters">Używane znaki:</div>
+            <div class="characters">
+                <input type="checkbox" id="useUppercase" checked> ABC
+                <input type="checkbox" id="useLowercase" checked> abc
+                <input type="checkbox" id="useNumbers" checked> 123
+                <input type="checkbox" id="useSpecialChars"checked> #$&
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
